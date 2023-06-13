@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Business Card Example</title>
+  <style>
+    body{
+      background-color: #4d4b4b;
+      color: rgb(195, 194, 194);
+      margin-top: 50px;
+    }
+    h1,h2,p,ul{
+      padding: 5px;
+      margin: 1px;
+      list-style: none;
+      color: white;
+      padding-left: 10px;
+      font-family: arial;
+    }
+    #business-card{
+      background-color: #111;
+      width: 400px;
+      height: 200px;
+      border: 10px solid white;
+      display: inline-block;
+      box-shadow: 0 0 10px 10px white;
+    }
+    .info{
+        border-left: 2px solid white;
+      }
+    #business-card .name{
+        display: inline-block;
+        padding: 5px;
+        font-size: 13px;
+        text-align: center;
+    }
+    #business-card .info{
+        display: inline-block;
+        font-size: 13px;
+    }
+    #business-card .name h1{
+      margin-top: 50px;
+      margin-left: 13%;
+      text-align: center;
+      padding-top: 10px;
+    }
+    #business-card .name h2{
+        margin-left: 65px;
+        color: chocolate;
+        padding: 0px;
+    }
+    #business-card .name small{
+        margin-left:45px;
+        
+    }
+    #business-card .info li:before{
+      content: 0;
+    }
+    #business-card .info li:before{
+      content: "📱";
+    }
+    #business-card .info li:nth-child(2):before{
+      content: "📫";
+    }
+    #business-card .info li:nth-child(3):before{
+      content: "🌍";
+    }
+    
+
+    
+    
+
+
+  </style>
+</head>
+<body>
+  <div id="business-card">
+
+    <div class="name">
+      <h1>Firstname</h1>
+      <h2>Lastname</h2>
+      <small>web designer &#47; developer</small>
+    </div>
+    <div class="info">
+      <p>12345 Some Street, City<br>State, Province, Country</p>
+       <ul>
+         <li>+00 22 333444</li>
+         <li>email@somemail.example</li>
+         <li>www.exampledomain.example</li>
+       </ul>
+    </div>
+
+  </div>
+</body>
+</html>
